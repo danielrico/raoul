@@ -1,0 +1,71 @@
+html, body{
+  background: #eee;
+  height: 100%;
+}
+html{
+  background: #eee;
+}
+body{
+  @include cover;
+  font-family: "myriad", sans-serif;
+}
+
+#time{
+  @include verticalalign;
+  color: white;
+  font-size: 12.5em;
+  line-height: .65em;
+  padding-bottom: 6.5%;
+  text-align: center;
+  text-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  span{
+    display: block;
+    font-size: 25%;
+    opacity: .8;
+  }
+}
+#bm{
+  padding: 0 10%;
+  position: fixed;
+  text-align: center;
+  top: 80%;
+  width: 100%;
+  z-index: 3;
+  li{
+  }
+  a{
+    border-radius: 4px;
+    color: white;
+    display: block;
+    padding: 35px 0;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+    transition: background ease-in-out .25s;
+    img{
+      height: auto;
+      margin-bottom: 15px;
+      width: 32px;
+    }
+    span{
+      display: block;
+    }
+    &:hover{
+      background: rgba(0,0,0,.33);
+    }
+  }
+}
+#gradient{
+  background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 100%); /* W3C */
+  bottom: 0;
+  height: 33%;
+  position: absolute;
+  width: 100%;
+}
+#overlay{
+  background: rgba(0,0,0,.66);
+  display: none;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}

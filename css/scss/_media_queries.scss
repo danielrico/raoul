@@ -1,0 +1,80 @@
+[class*='l-'], [class*='m-'], [class*='s-'], [class*='xs-'] {
+  float: left;
+  padding: 0 1%;
+}
+
+// XL
+
+.xl-20{
+  width: 20%;
+}
+.xl-12{
+  width: 12.5%;
+}
+.xl-10{
+  width: 10%;
+}
+
+// L
+
+@media screen and (max-width : 1700px){
+
+  .l-33{
+    width: 33.33%;
+  }
+  .l-25{
+    width: 25%;
+  }
+  .l-20{
+    width: 20%;
+  }
+
+}
+
+// M
+
+@media screen and (max-width : 1200px){
+
+  .m-33{
+    width: 33.33%;
+  }
+  .m-25{
+    width: 25%;
+  }
+  .m-20{
+    width: 20%;
+  }
+
+}
+
+// S
+
+@media screen and (max-width : 992px){
+
+  .s-100{
+    width: 100%;
+  }
+  .s-50{
+    width: 50%;
+  }
+  .s-33{
+    width: 33.33%;
+  }
+  .s-25{
+    width: 25%;
+  }
+
+}
+
+// XS
+
+@media screen and (max-width : 767px){
+
+  .xs-100{
+    width: 100%;
+  }
+  .xs-50{
+    width: 50%;
+  }
+
+}
