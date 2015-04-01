@@ -62,8 +62,11 @@ body { -webkit-background-size: cover; -moz-background-size: cover; -o-backgroun
 
 #bm { padding: 0 10%; position: fixed; text-align: center; top: 80%; width: 100%; z-index: 3; }
 #bm a { border-radius: 4px; color: white; display: block; padding: 35px 0; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2); transition: background ease-in-out .25s; }
-#bm a img { height: auto; margin-bottom: 15px; width: 32px; }
-#bm a span { display: block; }
+#bm a em { display: inline-block; *display: inline; *zoom: 1; vertical-align: top; border: 1px solid white; border-radius: 50%; font-size: 1.25em; height: 56px; line-height: 56px; margin-bottom: 15px; text-transform: lowercase; width: 56px; }
+#bm a em:first-letter { text-transform: uppercase; }
+#bm a .icon { display: inline-block; *display: inline; *zoom: 1; vertical-align: top; height: 56px; line-height: 56px; margin-bottom: 15px; width: 56px; }
+#bm a img { height: auto; vertical-align: middle; width: 32px; }
+#bm a .title { display: block; }
 #bm a:hover { background: rgba(0, 0, 0, 0.33); }
 
 #gradient { background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.45) 100%); /* W3C */ bottom: 0; height: 33%; position: absolute; width: 100%; }
