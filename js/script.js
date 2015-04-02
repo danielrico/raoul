@@ -34,12 +34,33 @@ jQuery(document).ready(function ($) {
   
   // Letter bookmarks
   
-  var text = 0
+  var text = 0;
   
   $("#bm li").each(function() {
     text = $( this ).find("span").text();
     $( this ).find("em").text(text.slice(0,2));
   });
+  
+  
+//////////////////////////////////////////////////////////
+/*printBookmarks('0');
+
+function printBookmarks(id) {
+ chrome.bookmarks.getChildren(id, function(children) {
+    children.forEach(function(bookmark) { 
+      console.debug(bookmark.title);
+      printBookmarks(bookmark.id);
+    });
+ });
+}*/
+//if(!chrome.bookmarks.search('Raoul', function(cucu){return cucu.length>0?true:false;})){
+chrome.bookmarks.create({'parentId': '1',
+                               'title': 'Raoul'},
+                              function(newFolder) {
+        console.log("added folder: " + newFolder.title);
+      });
+
+//}
 
 
   
