@@ -41,6 +41,25 @@ jQuery(document).ready(function ($) {
     $( this ).find("em").text(text.slice(0,2));
   });
   
+  // display time
+
+  var displayArea = document.getElementById("time_wrapper");
+  function format(num) {
+      var numStr = num.toString();
+      if (numStr.length === 1) {
+          return "0" + numStr;
+      } else {
+          return numStr;
+      }
+  }
+  function updateTimeDisplay() {
+      var dd = new Date();
+      var hh = dd.getHours();
+      var mm = dd.getMinutes();
+      displayArea.textContent = format(hh) + ":" + format(mm);
+  }
+  setInterval(updateTimeDisplay, 100);
+  
   
 //////////////////////////////////////////////////////////
 /*printBookmarks('0');
@@ -60,9 +79,9 @@ chrome.bookmarks.create({'parentId': '1',
         console.log("added folder: " + newFolder.title);
       });
 
-//}
-
-
+//}  
   
-
+  
 });
+
+
