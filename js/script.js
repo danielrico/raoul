@@ -34,12 +34,8 @@ jQuery(document).ready(function ($) {
   
   // Letter bookmarks
   
-
-  var text = 0
-
   var text = 0;
 
-  
   $("#bm li").each(function() {
     text = $( this ).find("span").text();
     $( this ).find("em").text(text.slice(0,2));

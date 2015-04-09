@@ -7,22 +7,16 @@ html{
 }
 body{
   @include cover;
-<<<<<<< HEAD
   font-family: "montserrat", sans-serif;
-=======
   font-family: "ayres", sans-serif;
->>>>>>> Raoul/master
 }
 
 #time{
   @include verticalalign;
   color: white;
-<<<<<<< HEAD
   font-size: 12.5em;
-=======
   /*font-size: 12.5em;*/
   font-size: 17em;
->>>>>>> Raoul/master
   line-height: .65em;
   padding-bottom: 6.5%;
   text-align: center;
@@ -40,8 +34,6 @@ body{
   top: 80%;
   width: 100%;
   z-index: 3;
-  li{
-  }
   a{
     border-radius: 4px;
     color: white;
