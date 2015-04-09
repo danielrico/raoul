@@ -1,22 +1,9 @@
 /* webfonts */
-<<<<<<< HEAD
-/*@font-face{
-  font-family : "myriad";
-  src : url('../fonts/myriad/MyriadPro-Regular.otf');
-}
-@font-face{
-=======
 @font-face{
   font-family : "ayres";
   src : url('../fonts/ayres/Ayres.ttf');
 }
 /*@font-face{
->>>>>>> Raoul/master
-  font-family : "myriad";
-  src : url('../fonts/myriad/MyriadPro-Semibold.otf');
-  font-weight: bold;
-}*/
-@font-face{
   font-family : "montserrat";
   src : url('../fonts/montserrat/Montserrat-Regular.ttf');
 }
@@ -24,8 +11,7 @@
   font-family : "montserrat";
   src : url('../fonts/montserrat/Montserrat-Bold.ttf');
   font-weight: bold;
-}
-
+}*/
 
 /* Micro clearfix */
 @mixin cf{

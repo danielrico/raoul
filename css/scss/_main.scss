@@ -7,14 +7,13 @@ html{
 }
 body{
   @include cover;
-  font-family: "montserrat", sans-serif;
   font-family: "ayres", sans-serif;
 }
 
 #time{
   @include verticalalign;
   color: white;
-  font-size: 12.5em;
+  font-size: 17em;
   /*font-size: 12.5em;*/
   font-size: 17em;
   line-height: .65em;
