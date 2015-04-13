@@ -1,8 +1,8 @@
 /* webfonts */
-@font-face{
+/*@font-face{
   font-family : "ayres";
   src : url('../fonts/ayres/Ayres.ttf');
-}
+}*/
 /*@font-face{
   font-family : "montserrat";
   src : url('../fonts/montserrat/Montserrat-Regular.ttf');
@@ -33,6 +33,9 @@
 }
 /* background cover */
 @mixin cover{
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-reapeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
