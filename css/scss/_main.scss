@@ -7,19 +7,21 @@ html{
 }
 body{
   @include cover;
-  font-family: "ayres", sans-serif;
+  font-family: sans-serif;
 }
 
 #time{
-  @include verticalalign;
+  /*@include verticalalign;*/
   color: white;
-  font-size: 17em;
-  /*font-size: 12.5em;*/
-  font-size: 17em;
-  line-height: .65em;
-  padding-bottom: 6.5%;
+  font-size: 3em;
+  /*line-height: .65em;
+  padding-bottom: 6.5%;*/
+  padding-top: 1%;
   text-align: center;
   text-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  #time_wrapper{
+    font-weight: 400;
+  }
   span{
     display: block;
     font-size: 25%;
